@@ -21,6 +21,9 @@
 const arrInc = (arr) => {
     let result = [];
     // write your code here
+    for (let i = 0 ; i < arr.length ; i++){
+        result.push(arr[i] + 10 );
+    }
     return result;
 }
 // -------------------------------------------------------------------------------------------------------
@@ -38,7 +41,12 @@ const arrInc = (arr) => {
 //  [5, 6, 7, 7]
 // 
 const roundDecimals = (arr) => {
-    // write your code here
+    // write your code here    
+let result = [];
+for (let index = 0; index < arr.length; index++) {      
+  result[index] = Math.round(arr[index]);
+}
+ console.log(result);
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -106,8 +114,20 @@ const roundDecimals = (arr) => {
 // ]
 //
 
+
 const employeesBonus = (arr) => {
     // write your code here
+    let data = arr ;
+    for (let index = 0; index < data.length; index++) {
+        let x = data[index].salary;
+        let v = parseInt(x);
+        if( data[index].workHours > 8 ){
+        data[index].salary = v + 100;
+        }else {
+        data[index].salary =v +50;
+        }
+        }
+    console.log(arr);
 }
 // -------------------------------------------------------------------------------------------------------
 
