@@ -19,8 +19,8 @@
 function square(arr) {
     // write your code here
 const map1 = arr.map(x => x * x);
-
-console.log(map1);
+//console.log(map1);
+return map1;
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -147,8 +147,9 @@ function gradesAvg(arr) {
      newarr.avg= avgd;
       result.push(newarr);       
     }
-    //console.log(result);
+
     return result ;   
+
 }
 // -------------------------------------------------------------------------------------------------------
 
