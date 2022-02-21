@@ -64,7 +64,8 @@ function fullName(arr) {
 
 fullNames = arr
   .map(x => `${x.firstName} ${x.lastName}`);
-console.log(fullNames);
+//console.log(fullNames);
+return fullNames ;
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -134,7 +135,7 @@ function gradesAvg(arr) {
     let grads = [];
     let result = [];    
     let avgd = 0 ;
-    
+
     for (var i = 0; i < arr.length; i++){
       let newarr = arr[i];
       grads = arr[i].gradsList;     
@@ -146,7 +147,8 @@ function gradesAvg(arr) {
      newarr.avg= avgd;
       result.push(newarr);       
     }
-    console.log(result);   
+    //console.log(result);
+    return result ;   
 }
 // -------------------------------------------------------------------------------------------------------
 
