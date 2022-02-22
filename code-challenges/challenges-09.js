@@ -46,7 +46,8 @@ let result = [];
 for (let index = 0; index < arr.length; index++) {      
   result[index] = Math.round(arr[index]);
 }
- console.log(result);
+ //console.log(result);
+    return result;
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -127,7 +128,8 @@ const employeesBonus = (arr) => {
         data[index].salary =v +50;
         }
         }
-    console.log(arr);
+    return arr;
+   // console.log(arr);
 }
 // -------------------------------------------------------------------------------------------------------
 
