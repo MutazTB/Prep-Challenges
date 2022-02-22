@@ -29,7 +29,7 @@ const objLat = (obj) => {
      
     const firstn = firstName.charAt(0).toUpperCase() + firstName.slice(1);
     const lastn = lastName.charAt(0).toUpperCase() + lastName.slice(1);
-    return console.log("my name is " + firstn +" "+ lastn +" I am " + age +" YO, and I love " + hobby+"." );
+    console.log("my name is " + firstn +" "+ lastn +" I am " + age +" YO, and I love " + hobby+"." );
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -101,13 +101,14 @@ const cvFormatter = (arr) => {
         if(arr[i].firstName != null){
         
          if (arr[i].lastName == null){
-              fullName = arr[i].firstName;
+              fullName ={"fullName" : arr[i].firstName};
         }
         else {
-             fullName =arr[i].firstName + " " + arr[i].lastName ;
+             fullName = {"fullName" :arr[i].firstName + " " + arr[i].lastName };
         }
         }
-        details.push([fullName , arr[i].tech]);
+        let tech = {"tech" : arr[i].tech};
+        details.push(fullName , tech);
     }}
     console.log(details);
     
