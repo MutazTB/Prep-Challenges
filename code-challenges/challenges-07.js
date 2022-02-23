@@ -29,7 +29,7 @@ const objLat = (obj) => {
      
     const firstn = firstName.charAt(0).toUpperCase() + firstName.slice(1);
     const lastn = lastName.charAt(0).toUpperCase() + lastName.slice(1);
-    console.log("my name is " + firstn +" "+ lastn +" I am " + age +" YO, and I love " + hobby+"." );
+    return "my name is " + firstn +" "+ lastn +" I am " + age +" YO, and I love " + hobby+"." ;
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -110,8 +110,8 @@ const cvFormatter = (arr) => {
         let tech = {"tech" : arr[i].tech};
         details.push(fullName , tech);
     }}
-    console.log(details);
-    
+    //console.log(details);
+    return details;
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -179,7 +179,8 @@ const applicationsStatics = (arr) => {
     details.push(["java_Devs", javaDevs]);
     details.push(["rejectedApplicants", totalApplicants]);
     details.push(["rejectedApplicants", rejectedApplicants]);
-    console.log(details);
+    //console.log(details);
+    return details ;
 };
 // -------------------------------------------------------------------------------------------------------
 
