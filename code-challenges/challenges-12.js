@@ -96,7 +96,7 @@ const vowelsFiltration = (arr) => {
     // write your code here
     let result = [];
     for (let i = 0 ; i < arr.length ; i++){
-        if(!arr[i].match(/[aeiou]/g)){
+        if(arr.filter(str => !/[aeiou]/g)){
             result.push(arr[i]);
         }
     }
